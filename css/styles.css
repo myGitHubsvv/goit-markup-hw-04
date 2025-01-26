@@ -388,6 +388,20 @@ main section .main__projects .container {
     max-width: 264px;
 }
 
+.icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon:hover, .icon:focus {
+    fill: #404BBF;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
 
 
 
