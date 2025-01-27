@@ -625,6 +625,10 @@ social-icons svg {
     background-color: fill#31d0aa;
 }
 
+.page-footer .social-link:hover, .page-footer .social-link:focus {
+    background-color: fill#31d0aa;
+}
+
 .social-link svg {
     width: 24px;
     height: 24px;
