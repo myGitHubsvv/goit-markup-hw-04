@@ -415,7 +415,7 @@ section.main__projects ul.main__list_three li.main__item_three:first-child {
 
 .main__projects .main__item-content:hover p,
 .main__projects .main__item-content:focus p {
-    transform: translateY(0%);
+    transform: translateY(0%); /* Updated transform */
 }
 
 .main__item-content {
