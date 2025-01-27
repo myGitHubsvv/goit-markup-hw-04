@@ -179,15 +179,19 @@ main .section:nth-child(3) .container{
     margin-bottom: 72px;
 }
 
-/* .main__photo-section ul.main__list_two {
-    display: flex;
-    gap: 24px;
-} */
-
-.main__photo-section ul.main__list_two .main__item_two {
+.main__photo-section ul.main__list_two {
     display: flex;
     gap: 24px;
 }
+
+.main__photo-section ul.main__list_two li.main__item_two ul.social-icons {
+    gap: 24px;
+}
+
+/* .main__photo-section ul.main__list_two .main__item_two {
+    display: flex;
+    gap: 24px;
+} */
 
 /* .main__photo-section ul.main__list_two li.main__item_two:first-child {
 
