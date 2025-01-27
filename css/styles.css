@@ -179,7 +179,12 @@ main .section:nth-child(3) .container{
     margin-bottom: 72px;
 }
 
-.main__photo-section ul.main__list_two {
+/* .main__photo-section ul.main__list_two {
+    display: flex;
+    gap: 24px;
+} */
+
+.main__photo-section ul.main__list_two .main__item_two {
     display: flex;
     gap: 24px;
 }
@@ -467,7 +472,8 @@ main section .main__projects .container {
 
 .social-icons {
     display: flex;
-    gap: 16px;
+    justify-content: center;
+    gap: 24px; /* Updated gap */
 }
 
 .icon-container {
