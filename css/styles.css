@@ -621,7 +621,7 @@ social-icons svg {
     background-color: #31d0aa;
 } */
 
-.page-footer .social-link:hover, .page-footer .social-link:focus {
+.page-footer .social-link:hover svg, .page-footer .social-link:focus svg {
     background-color: fill#31d0aa;
 }
 
