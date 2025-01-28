@@ -522,10 +522,10 @@ main section .main__projects .container {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .social-icons a:hover,
+.social-icons a:hover,
 .social-icons a:focus {
     background-color: #404bbf;
-} */
+}
 
 social-icons svg {
     width: 16px;
