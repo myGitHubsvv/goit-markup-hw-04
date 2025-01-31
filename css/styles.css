@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .header__wrapper {
     display: flex;
+    align-items: center;
 }
 
 .header-nav {
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     align-items: center;
 }
 
-.logo {
+/* .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -51,6 +52,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
+} */
+
+.header-logo {
     margin-right: 76px;
 }
 
@@ -79,6 +84,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     position: relative;
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
 }
 
 .nav-link::after {
@@ -98,6 +104,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .contacts {
     font-style: normal;
+    margin-left: auto;
 }
 
 .contacts-link {
@@ -106,7 +113,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.02em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    display: block;
+    padding: 24px;
+    }
 
 .contacts-link:hover, .contacts-link:focus {
     color: #404bbf;
@@ -133,6 +142,10 @@ section ul li{
     border-radius: 0px 0px 4px 4px;
 }
 
+section.main__content {
+    background-color: transparent;
+}
+
 main .section:nth-child(2) .visually-hidden {
     position: absolute;
     width: 1px;
@@ -146,26 +159,22 @@ main .section:nth-child(2) .visually-hidden {
     overflow: hidden;
   }
 
-  main .section:nth-child(2) .main__list_first {
+  .main__list_first {
     display: flex;
     gap: 24px;
   }
 
-  /* section.section:nth-child(2) .main__list_first .main__item_first {
-    width: calc((100% - 72px) / 4);
-  } */
-
-  /* section.main__content .main__list_first .main__item_first {
-    width: calc((100% - 72px) / 4);
-  } */
-
-  section.main__content .visually-hidden .main__list_first .main__item_first {
+  section.main__content ul.main__list_first li.main__item_first {
     width: calc((100% - 3 * 24px) / 4);
+    background-color: transparent;
+    border-radius: 0;
+    background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
   }
 
-main .section:nth-child(3) .container{
+/* main .section:nth-child(3) .container{
     padding: 32px 0;
-}
+} */
 
 .section-title {
     font-size: 36px;
@@ -179,6 +188,10 @@ main .section:nth-child(3) .container{
     margin-bottom: 72px;
 }
 
+section.main__photo-section .section-title {
+    border-bottom: 0 solid transparent;
+}
+
 .main__photo-section ul.main__list_two {
     display: flex;
     gap: 24px;
@@ -188,14 +201,10 @@ main .section:nth-child(3) .container{
     gap: 24px;
 }
 
-/* .main__photo-section ul.main__list_two .main__item_two {
-    display: flex;
-    gap: 24px;
-} */
-
-/* .main__photo-section ul.main__list_two li.main__item_two:first-child {
-
-} */
+ul.main__list_two li.main__item_two {
+    color:#ffffff;
+    border-radius: 0 0 4px 4px;
+}
 
 img {
     display: block;
@@ -208,6 +217,9 @@ img {
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 496px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
 }
 
 .main__item {
@@ -222,6 +234,7 @@ img {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .btn:hover, .btn:focus {
@@ -258,6 +271,10 @@ img {
     max-width: 496px;
 }
 
+.main__item_first .main__item-title {
+    text-align: left;
+}
+
 .main__header .btn {
     display: block;
     min-width: 169px;
@@ -291,7 +308,7 @@ section.main__projects ul.main__list_three {
     row-gap: 48px;
 }
 
-section.main__projects ul.main__list_three li.main__item_three:first-child {
+li.main__item_three {
     width: calc((100% - 48px) / 3);
 }
 
@@ -323,13 +340,9 @@ section.main__projects ul.main__list_three li.main__item_three:first-child {
     background-color: #F4F4FD;
 }
 
-/* .main__photo-section .container {
-     existing code 
-} */
-
-.main__item-content {
+/* .main__item-content {
     padding: 32px 0;
-}
+} */
 
 .main__item-title {
     font-weight: 500;
@@ -341,6 +354,10 @@ section.main__projects ul.main__list_three li.main__item_three:first-child {
     margin-bottom: 8px;
 }
 
+section.main__photo-section .main__item-title, section.main__photo-section .main__item-text {
+    text-align: center;
+}
+
 .main__item-text {
     font-size: 16px;
     line-height: 1.5;
@@ -350,12 +367,16 @@ section.main__projects ul.main__list_three li.main__item_three:first-child {
 }
 
 .main__projects {
-    background-color: #F4F4FD;
+    background-color: #ffffff;
     padding: 120px 0;
 }
 
 .main__projects .container {
     /* ...existing code... */
+}
+
+.main__projects .section-title, .main__projects .main__item-text {
+    text-align: left;
 }
 
 .main__projects .section-title {
@@ -364,8 +385,8 @@ section.main__projects ul.main__list_three li.main__item_three:first-child {
 
 .main__projects .main__item-content {
     padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+    /* border: 1px solid #e7e9fc;
+    border-top: none; */
     position: relative;
     overflow: hidden;
 }
@@ -398,6 +419,10 @@ section.main__projects ul.main__list_three li.main__item_three:first-child {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.img_1 {
+    transform: rotate(90deg);
+}
+
 .main__projects .main__item-content p {
     position: absolute;
     top: 0;
@@ -424,9 +449,9 @@ section.main__projects ul.main__list_three li.main__item_three:first-child {
     border-top: none;
 }
 
-.main__item-title {
+/* .main__item-title {
     margin-bottom: 8px;
-}
+} */
 
 .visually-hidden {
     position: absolute;
@@ -441,10 +466,6 @@ section.main__projects ul.main__list_three li.main__item_three:first-child {
 
 .main__content .container {
     /* ...existing code... */
-}
-
-.main__item-title {
-    margin-bottom: 8px;
 }
 
 main section .main__projects .container {
@@ -620,14 +641,6 @@ social-icons svg {
 .page-footer .social-link:hover, .page-footer .social-link:focus {
     background-color: #31d0aa;
 }
-
-/* .page-footer .social-link:hover svg, .page-footer .social-link:focus svg {
-    background-color: fill#31d0aa;
-} */
-
-/* .page-footer .social-link:hover, .page-footer .social-link:focus {
-    background-color: fill#31d0aa;
-} */
 
 .social-link svg {
     width: 24px;
