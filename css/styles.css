@@ -141,18 +141,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .main__header {
     background-color: #2e2f42;
-     /* Updated padding */
-    /* padding-top: 188px 0; */
-
+    padding-top: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.main__header:first-child {
-    padding-top: 188px 0; 
 }
 
 .main_title {
@@ -207,6 +201,8 @@ section.main__content {
     clip: rect(0, 0, 0, 0);
     clip-path: inset(100%);
     white-space: nowrap;
+    
+    visibility: hidden;
 }
 
   .main__list_first {
