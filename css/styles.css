@@ -548,7 +548,6 @@ section ul li{
     transform: translateY(0%);
 }
 
-
 /* ...existing code... */
 
 /* ..........................  FOOTER ..........................   */
@@ -587,9 +586,6 @@ section ul li{
     line-height: 1.5;
     color: var(--footer-text-color, #F4F4FD);
     letter-spacing: 0.02em;
-}
-
-.footer-text {
     max-width: 264px;
 }
 
@@ -597,20 +593,4 @@ section ul li{
     background-color: #31d0aa;
 }
 
-/* ...existing code... */
-
-.footer-link {
-    display: block;
-    margin-top: 20px;
-    font-size: 16px;
-    color: #4d5ae5;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-link:hover,
-.footer-link:focus {
-    color: #31d0aa;
-}
-
-/* ...existing code... */
+/* .......................... / FOOTER .........................   */
